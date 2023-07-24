@@ -21,4 +21,4 @@ function findAvailablePort (desiredPort) {
   })
 }
 
-module.exports = { findAvailablePort }
+module.exports = { findAvailablePort } // Exportar para utilizar desde otro archivo
