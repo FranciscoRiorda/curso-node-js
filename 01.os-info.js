@@ -1,5 +1,6 @@
 // Modulos nativos de NodeJS
 
+// import { platform, release, arch, cpus, freemem, totalmem, uptime } from 'node:os'; => con .mjs
 const os = require('node:os');
 
 console.log('Información del sistema operativo:')
