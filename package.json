@@ -1,0 +1,28 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon 1.https.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoRiorda/curso-node-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranciscoRiorda/curso-node-js/issues"
+  },
+  "homepage": "https://github.com/FranciscoRiorda/curso-node-js#readme"
+}
