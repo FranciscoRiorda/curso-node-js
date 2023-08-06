@@ -22,13 +22,25 @@ const processRequest = (req, res) => {
     case 'POST':
       switch (url) {
         case '/pokemon': {
-          const body = ''
+          let body = ''
+          // Escuchar el evento data
+          req.on('data', chunk => {
+            body += chunk.toString()
+          })
+
+          req.on('end', () => {
+            const data = JSON.parse(body)
+            // Llamar a una base de datos para guardar la info
+            res.writeHead(201, { 'Content-Type': 'application/json; charset=utf-8' })
+
+            res.end(JSON.stringify(data))
+          })
           break
         }
-        case '/otro': {
-          const body = ''
-          break
-        }
+        default:
+          res.statusCode = 404
+          res.setHeader('Content-Type', 'text/plain; charset=utf-8')
+          return res.end('Not Found 404')
       }
   }
 }
