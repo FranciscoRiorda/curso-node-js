@@ -1,6 +1,7 @@
 const http = require('node:http')
 
 // CommonJS => modulos clasicos de node. Se puede usar json
+// Configuramos rutas
 const dittoJSON = require('./pokemon/ditto.json')
 
 const processRequest = (req, res) => {
